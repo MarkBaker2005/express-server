@@ -39,7 +39,9 @@ app.get("/campsites/:campsiteId", (req, res) => {
 
 app.post("/campsites/:campsiteId", (req, res) => {
   res.statusCode = 403;
-  res.end(`POST operation not supporte on /campsites/${req.params.campsiteId}`);
+  res.end(
+    `POST operation not supported on /campsites/${req.params.campsiteId}`
+  );
 });
 
 app.put("/campsites/:campsiteId", (req, res) => {
